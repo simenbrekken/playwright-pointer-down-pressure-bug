@@ -1,0 +1,13 @@
+<div>
+  <h1>Mouse click pressure test</h1>
+  <button id="button">Button</button>
+  <label>
+    Pressure: <input type="text" id="output" readonly>
+  </label>
+</div>
+
+<script type="module">
+  document.getElementById('button').addEventListener('pointerdown', (event) => {
+    document.getElementById('output').value = event.pressure;
+  });
+</script>
